@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript">
-        function message()
-        {
-            alert("Your about to stream movies!!!")
-        }
-        </script>
-        <title>
-            Tvibes streamer 
-        </title>
-    </head>
+    <script type="text/javascript">
+var d =new Date();
+var hours =d.getHours();
+
+if (hours < 12)
+{
+    document.write("<h1>Good Morning</h1>")
+}
+else if (hours>=10 && hours <16)
+{
+document.write("<h1>Good Afternoon</h1>");
+}
+else
+{
+document.write("<h1>Good Evening</h1>");
+}
+
+
+function display_prompt()
+{
+    var r=confirm("would you Like to to reviece updates.");
+    if (r==true)
+    {
+    alert("Great you will recieve notification when newly cloths are released.");
+    }
+}
+
+    </script>
     <style>
-        body{
+        body {
             text-align: center;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(
                 -50%,-50%
             );
-        }
-        img{
-            border-radius: 10px 10px 10px;
+            background-image: url(IMG-20220112-WA0004.jpg);
+            background-repeat:round;
+            color:gold;
         }
     </style>
+    </head>
     <body>
-        <img src="Tvibes streamer.jpg">
-        <h2>Welcome</h2>
-        <h3>To
-        <br>Tvibes Movie Streamer.</h3>
-        <br>
-        <a href="Movies.html" onclick="message()">
-            <p>Continue >></p>
-        </a>
-    </body>
-</html>
