@@ -29,6 +29,10 @@ function display_prompt()
     }
 }
 
+function show_alert() {
+ alert("Click the fall on picture to continue");
+} 
+
     </script>
     <style>
         body {
@@ -45,7 +49,7 @@ function display_prompt()
         }
     </style>
     </head>
-    <body>
+    <body onload="show_alert()">
         <h3>WELCOME<br> TO</h3>
         <a href="Main page.html"><img src="IMG-20220209-WA0005.jpg" width="50%" height="50%" onclick="display_prompt()" >
 </a>
