@@ -85,6 +85,68 @@ function myFunction6() {
       x.style.display = "none";
     }
   }
+  function myFunction7() {
+    var x = document.getElementById("myDIV7");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
+  function myFunction8() {
+      var x = document.getElementById("myDIV8");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+  function myFunction9() {
+    var x = document.getElementById("myDIV9");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
+  function myFunction10() {
+      var x = document.getElementById("myDIV10");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+  function myFunction11() {
+    var x = document.getElementById("myDIV11");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
+  function myFunction12() {
+      var x = document.getElementById("myDIV12");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function myFunction13() {
+      var x = document.getElementById("myDIV13");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
   // ********************
 
   function notNow (){
@@ -111,4 +173,36 @@ function myFunction6() {
   //   dots[slideIndex-1].className += " active";
   //   setTimeout(showSlides, 5000); // Change image every 5 seconds
   // }  
-  /**********************************/ 
+  /**********************************/
+  
+  
+
+//Increment click button for add to cart
+  var cartCounter = 0;
+
+  function incrementCart(){
+      updateDisplay(++cartCounter);
+  }
+  
+  function reset(){
+      cartCounter = 0
+      updateDisplay(cartCounter);
+  }
+  
+  function updateDisplay(Counter){
+      document.getElementById("Counter").innerHTML= Counter + " Cart";
+  }
+  
+  /**************************
+   * 
+   * 
+   * 
+   * 
+   * ************************************/ 
+
+  // pop up text for cart...
+
+
+  function cartPopupMessage (){
+    alert("Due to because this is a practise website this cart button won't be working. thank you for understanding !")
+  }

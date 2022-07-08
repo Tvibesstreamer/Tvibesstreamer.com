@@ -9,59 +9,6 @@
         <title>
             Fall On Clothing
         </title>
-        <style>
-            
-            /* Slideshow container */
-            .slideshow-container {
-              max-width: 1000px;
-              position: relative;
-              margin-left: 25%;
-            }
-            
-            /* Caption text */
-            .text {
-              color: #f2f2f2;
-              font-size: 15px;
-              padding: 8px 12px;
-              position: absolute;
-              bottom: 8px;
-              width: 100%;
-              text-align: center;
-            }
-            
-            
-            /* The dots/bullets/indicators */
-            .dot {
-              height: 15px;
-              width: 15px;
-              margin: 0 2px;
-              background-color: #bbb;
-              border-radius: 50%;
-              display: inline-block;
-              transition: background-color 0.6s ease;
-            }
-            
-            .active {
-              background-color: #717171;
-            }
-            
-            /* Fading animation */
-            .fade {
-              animation-name: fade;
-              animation-duration: 4.5s;
-            }
-            
-            @keyframes fade {
-              from {opacity: .4} 
-              to {opacity: 1}
-            }
-            
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {
-              .text {font-size: 11px}
-            }
-            </style>
-            
     </head>
     <body onload="startTime()" >
     
@@ -71,10 +18,12 @@
         <input type="search" name="search" placeholder="Search items..." onchange="notNow()" class="box" style="position: right;">
         <div class="topnav">
             <a class="active" href="Main page.html">Home</a>
-            <a href="comingSoon.html">News</a>
-            <a href="comingSoon.html">Contact</a>
-            <a href="comingSoon.html">About</a>
-            <button style="margin-left: 55%;" onclick="myTheme()" class="button2">Dark/Light mode</button>
+             <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <button style="margin-left: 38%;" onclick="myTheme()" class="button2">Dark/Light mode</button>
+            <button class="cartButton" id="Counter"  onclick="cartPopupMessage()">0  Cart</button>
+            <button class="ClearButton" onclick="reset()">Clear</button>
              </div>   
 <br>
 <div style="background-blend-mode: color;">
@@ -85,14 +34,14 @@
             <img src="IMG-20220112-WA0001.jpg" width="80%" height="90%">
             <h2>Black Goat</h2>
             <div id="myDIV" class="show"><h3>_______________<br>Price: R150.00</h3>
-                <a href="comingSoon.html"> <input type="button" value="+ Add Chart" class="addChart" ></a></div><br>
+                 <input type="button" value="+ Add Cart" onclick="incrementCart()" class="addChart" ></div><br>
             <input type="button" value="View Price" class="button" onclick="myFunction()">
         </td>
     <td>
             <img src="IMG-20220112-WA00041.jpg" width="80%" height="40%">
             <h2>white Horse</h2>
             <div id="myDIV2" class="show"><h3>_______________<br>Price: R175.00</h3> 
-                <a href="comingSoon.html"><input type="button" value="+ Add Chart" class="addChart"><a href="comingSoon.html"></a></h1></div><br>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></h1></div><br>
             <input type="button" value="View Price" class="button" onclick="myFunction2()">
     </td>
     </tr>
@@ -100,16 +49,16 @@
     <tr>
         <td>
             <img src="IMG-20220112-WA0003.jpg" width="80%" height="80%">
-            <h2>Black venom</h2>
+            <h2>Black Venom</h2>
             <div id="myDIV3" class="show"><h3>_______________<br>Price: R180.00</h3>
-                <a href="comingSoon.html"><input type="button" value="+ Add Chart" class="addChart"></a></div><br>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
             <input type="button" value="View Price" class="button" onclick="myFunction3()">
         </td>
     <td>
             <img src="IMG-20220112-WA0002.jpg" width="80%" height="80%">
             <h2>Black King</h2>
             <div id="myDIV4" class="show"><h3>_________________<br>Price: R160.00</h3> 
-                <a href="comingSoon.html"><input type="button" value="+ Add Chart" class="addChart"></a></div><br>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
             <input type="button" value="View Price" class="button" onclick="myFunction4()">
     </td>
     </tr>
@@ -119,14 +68,14 @@
             <img src="IMG-20220112-WA0005.jpg" width="80%" height="80%">
             <h2>Black King #2</h2>
                 <div id="myDIV5" class="show"><h3>_______________<br>Price: R170.00 </h3>
-                    <a href="comingSoon.html"><input type="button" value="+ Add Chart" class="addChart"></a></div><br>
+                    <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
                 <input type="button" value="View Price" class="button" onclick="myFunction5()">
         </td>
         <td>
             <img src="IMG-20220112-WA0006.jpg" width="80%" height="80%">
             <h2>King Sheep</h2>
             <div id="myDIV6" class="show"><h3>_______________<br>Price: R120.00</h3>
-                <a href="comingSoon.html"><input type="button" value="+ Add Chart" class="addChart"></a></div><br>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
             <input type="button" value="View Price" class="button" onclick="myFunction6()">
         </td>
     </tr>
@@ -147,18 +96,18 @@
     
     <div class="mySlides fade">
       
-      <img src="IMG-20220209-WA0005.jpg" style="width:70%; height:100%;">
+      <img src="IMG-20220209-WA0005.jpg" style="width:60%; height:90%;">
       <div class="text"></div>
     </div>
     
     <div class="mySlides fade">
       
-      <img src="IMG-20220315-WA0008.jpg" style="width:70%; height:100%;">
+      <img src="IMG-20220315-WA0008.jpg" style="width:60%; height:60%;">
       <div class="text"><h2>Quality</h2></div>
     </div>
     <div class="mySlides fade">
       
-        <img src="IMG-20220112-WA0004.jpg" style="width:70%; height:100%;">
+        <img src="IMG-20220112-WA0004.jpg" style="width:60%; height:80%;">
         <div class="text"></div>
     </div>
     </div>
@@ -172,7 +121,76 @@
     </div>
     <!-- end here code -->
 <br><br>
-<marquee behavior="scroll" direction="left">
+<!-- shorts  nd extra's code -->
+<div style="background-blend-mode: color;">
+  <div class="gray">
+<table style="text-align: center;">
+    <tr>
+      <h1 style="text-align: center;color:rgb(141, 140, 140);">Pants & Extra's</h1>
+        <td>
+            <img src="IMG-20220526-WA0006.jpg" width="80%" height="90%">
+            <h2>white Flow</h2>
+            <div id="myDIV7" class="show"><h3>_______________<br>Price: R90.00</h3>
+                 <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
+            <input type="button" value="View Price" class="button" onclick="myFunction7()">
+        </td>
+    <td>
+            <img src="IMG-20220526-WA0008.jpg" width="80%" height="40%">
+            <h2>Black Dog</h2>
+            <div id="myDIV8" class="show"><h3>_______________<br>Price: R195.00</h3> 
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></h1></div><br>
+            <input type="button" value="View Price" class="button" onclick="myFunction8()">
+    </td>
+    </tr>
+    <br>
+    <tr>
+        <td>
+            <img src="IMG-20220526-WA0010.jpg" width="80%" height="80%">
+            <h2>Black Venom</h2>
+            <div id="myDIV9" class="show"><h3>_______________<br>Price: R120.00</h3>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
+            <input type="button" value="View Price" class="button" onclick="myFunction9()">
+        </td>
+    <td>
+            <img src="IMG-20220526-WA0011.jpg" width="80%" height="80%">
+            <h2>Black Swag</h2>
+            <div id="myDIV10" class="show"><h3>_________________<br>Price: R170.00</h3> 
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
+            <input type="button" value="View Price" class="button" onclick="myFunction10()">
+    </td>
+    </tr>
+    <br><br><br>
+    <tr>
+        <td>
+            <img src="IMG-20220526-WA0009.jpg" width="80%" height="80%">
+            <h2>Black Dog</h2>
+                <div id="myDIV11" class="show"><h3>_______________<br>Price: R145.00 </h3>
+                    <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
+                <input type="button" value="View Price" class="button" onclick="myFunction11()">
+        </td>
+        <td>
+            <img src="IMG-20220526-WA0012.jpg" width="80%" height="80%">
+            <h2>King Sheep</h2>
+            <div id="myDIV12" class="show"><h3>_______________<br>Price: R128.99</h3>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
+            <input type="button" value="View Price" class="button" onclick="myFunction12()">
+        </td>
+    </tr>
+    <tr>
+      <td>
+          <img src="IMG-20220526-WA0013.jpg" width="80%" height="80%">
+          <h2>Green Mamber</h2>
+          <div id="myDIV13" class="show"><h3>_______________<br>Price: R148.99</h3>
+              <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></div><br>
+          <input type="button" value="View Price" class="button" onclick="myFunction13()">
+      </td>
+  </tr>
+</table>
+<br>
+</div>
+</div>
+<br><br>
+<marquee behavior="scroll" scrolldelay="100" direction="">
             <img src="IMG-20220112-WA0005.jpg" width="25%" height="25%">
       
             <img src="IMG-20220112-WA0006.jpg" width="25%" height="25%">
@@ -189,11 +207,11 @@
   <br><br>
 Search
 <br><br>Pre-order Info
-<br><br>Size Chart
+<br><br>Size Cart
 <br><br>Return policy
 <br><br>Terms f Services
 
-<p><b>Fall on Clo &copy; 2022|Powered By Tvibes</b></p>
+<p><b>Fall on Clo &copy; 2022|Powered By Tvibes<br>(Thabiso Mabyana)</b></p>
 <br><br>
  </div>  
  
