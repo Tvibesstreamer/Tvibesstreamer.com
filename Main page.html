@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <link href="world.css" type="text/css" rel="stylesheet">
+        <!-- ******************** -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- ******************** -->
+    
+        <script type="text/javascript" src="external.js">
+            </script>
+
+        <title>
+            Fall On Clothing
+        </title>
+    </head>
+    <body onload="startTime()" >
+    
+        <h1 style="text-align: center;" class="heading2">Fall O<span>n</span> C<span>l</span>o</h1>
+        <h3 style="text-align: center;" class="heading2">AF<span>R</span>IC<span>A</span></h2>
+        <div id="txt" style="text-align: center;"></div>
+        <input type="search" name="search" placeholder="Search items..." onchange="notNow()" class="increase1" style="position: right;">
+        <div class="topnav">
+            <a class="active" href="Main page.html">Home</a>
+             <a href="news.html">News</a>
+            <a href="#contact">Contact</a>
+            <a href="about.html">About</a>
+            <button style="margin-left: 38%;" onclick="myTheme()" class="button2">Dark/Light mode</button>
+            <button class="cartButton" id="Counter"  onclick="cartPopupMessage()">0  Cart</button>
+            <button class="ClearButton" onclick="reset()">Clear</button>
+             </div>
+             <p id="top"></p>
+<br>
+<div class="gray">
+<!-- ************************* -->
+<h1 class="heading" style="text-align: center;"> exclusive <span>products</span></h1>
+<!-- ************************* -->
+<table style="text-align: center;" cellspacing="20" >
+    <h4 style="text-align: center;" class="heading2"><a href="#pants" style="color: #000;"> Pants & <span>extra's</span></a> //<a href="#bags" style="color: #000;"> Bags</a></h4>
+    
+    <tr>
+        <td class="gray2" >
+            <img src="image/IMG-20220112-WA0001.jpg" width="80%" height="90%">
+            <h2 class="heading2"> Bl<span>a</span>c<span>k G</span>o<span>a</span>t </h2>
+            <h3>_______________<br>Price: R150.00</h3>
+                 <input type="button" value="+ Add Cart" onclick="incrementCart()" class="addChart" >
+        </td>
+        
+
+    <td class="gray2">
+        <br>
+            <img src="image/IMG-20220112-WA00041.jpg" width="80%" height="40%">
+            <h2 class="heading2">W<span>hi</span>t<span>e</span> h<span>o</span>r<span>se</span></h2>
+            <h3>_______________<br>Price: R175.00</h3> 
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></h1>
+             </td>
+    </tr>
+    <br>
+    
+    <tr>
+        <td class="gray2">
+            <br>
+            <img src="image/IMG-20220112-WA0003.jpg" width="80%" height="80%">
+            <h2 class="heading2">Bl<span>a</span>c<span>k</span> V<span>e</span>no<span>m</span> </h2>
+            <h3>_______________<br>Price: R180.00</h3>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+        </td>
+    <td class="gray2"><br><br>
+            <img src="image/IMG-20220112-WA0002.jpg" width="80%" height="80%">
+            <h2 class="heading2"><span>B</span>l<span>a</span>c<span>k K</span>i<span>n</span>g </h2>
+            <h3>_________________<br>Price: R160.00</h3> 
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+    </td>
+    </tr>
+    <br><br><br>
+    <tr>
+        <td class="gray2"><br>
+            <img src="image/IMG-20220112-WA0005.jpg" width="80%" height="80%">
+            <h2 class="heading2"><span>B</span>l<span>a</span>c<span>k K</span>i<span>n</span>g #2</h2>
+                <h3>_______________<br>Price: R170.00 </h3>
+                    <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+
+        </td>
+        <td class="gray2"><br>
+            <img src="image/IMG-20220112-WA0006.jpg" width="80%" height="80%">
+            <h2 class="heading2"> K<span>i</span>n<span>g</span> S<span>h</span>ee<span>p</span></h2>
+            <h3>_______________<br>Price: R120.00</h3>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+        </td>
+    </tr>
+</table>
+<br>
+</div>
+</div>
+<br><br>
+
+<h1 style="text-align: center;" class="heading2" id="bags">B<span>ags:</span></h1>
+<!-- slide show -->
+
+<div class="slideshow-container" style="text-align: center;">
+
+    <div class="mySlides fade">
+      <img src="image/IMG-20220314-WA0107.jpg"  style="width:50%; height:70%;">
+      <div class="text" style="color:rgb(151, 151, 151);"><h2>Top For Man & Women</h2></div>
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="image/IMG-20220209-WA0005.jpg" style="width:40%; height:70%;">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="image/IMG-20220315-WA0008.jpg" style="width:30%; height:50%;">
+      <div class="text"><h2>Quality</h2></div>
+    </div>
+    <div class="mySlides fade">
+      
+        <img src="image/IMG-20220112-WA0004.jpg" style="width:40%; height:60%;">
+        <div class="text"></div>
+    </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <!-- end here code -->
+<br><br>
+<!-- shorts  nd extra's code -->
+<div style="background-blend-mode: color;">
+  <div class="gray">
+<table style="text-align: center;" cellspacing="20">
+    <tr>
+      <h2 style="text-align: center;" class="heading2" id="pants">Pants &<span> Extra's</span></h2>
+        <td class="gray2">
+            <img src="image/IMG-20220526-WA0006.jpg" width="80%" height="90%">
+            <h2 class="heading2">W<span>hi</span>t<span>e</span> F<span>l</span>o<span>w</span></h2><br>
+            <h3>_______________<br>Price: R90.00</h3>
+                 <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+        </td>
+    <td class="gray2"><br>
+            <img src="image/IMG-20220526-WA0008.jpg" width="80%" height="40%">
+            <h2 class="heading2"><span>B</span>l<span>a</span>c<span>k</span> D<span>o</span>g</h2>
+            <h3>_______________<br>Price: R195.00</h3> 
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()"></h1>
+    </td>
+    </tr>
+    <br>
+    <tr>
+        <td class="gray2"><br>
+            <img src="image/IMG-20220526-WA0010.jpg" width="80%" height="80%">
+            <h2 class="heading2"><span>B</span>l<span>a</span>c<span>k</span> V<span>e</span>no<span>m</span></h2>
+            <h3>_______________<br>Price: R120.00</h3>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+        </td>
+    <td class="gray2"><br>
+            <img src="image/IMG-20220526-WA0011.jpg" width="80%" height="80%">
+            <h2 class="heading2"><span>B</span>l<span>a</span>c<span>k</span> S<span>a</span>g<span>e</span></h2>
+            <h3>_________________<br>Price: R170.00</h3> 
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+    </td>
+    </tr>
+    <br><br><br>
+    <tr>
+        <td class="gray2"><br>
+            <img src="image/IMG-20220526-WA0009.jpg" width="80%" height="80%">
+            <h2 class="heading2"><span>B</span>l<span>a</span>c<span>k</span> D<span>o</span>g (new <span>version</span>)</h2>
+                <h3>_______________<br>Price: R145.00 </h3>
+                    <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+
+        </td>
+        <td class="gray2"><br>
+            <img src="image/IMG-20220526-WA0012.jpg" width="80%" height="80%">
+            <h2 class="heading2">K<span>i</span>n<span>g</span> S<span>h</span>ee<span>p</span> (new <span>version</span>)</h2>
+            <h3>_______________<br>Price: R128.99</h3>
+                <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+        </td>
+    </tr>
+    <tr>
+      <td class="gray2"><br>
+          <img src="image/IMG-20220526-WA0013.jpg" width="80%" height="80%">
+          <h2 class="heading2">Gr<span>ee</span>n <span>M</span>am<span>b</span>e<span>r</span></h2>
+          <h3>_______________<br>Price: R148.99</h3>
+              <input type="button" value="+ Add Cart" class="addChart" onclick="incrementCart()">
+      </td>
+  </tr>
+</table>
+<br>
+</div>
+</div>
+<br><br>
+<marquee behavior="slide" scrolldelay="100" direction="">
+            <img src="image/IMG-20220112-WA0005.jpg" width="25%" height="25%">
+      
+            <img src="image/IMG-20220112-WA0006.jpg" width="25%" height="25%">
+        
+            <img src="image/IMG-20220112-WA0005.jpg" width="25%" height="25%">
+        
+            <img src="image/IMG-20220112-WA0006.jpg" width="25%" height="25%">
+ </marquee>
+
+<hr width="20%">
+<br><br>
+<h1 class="heading2" style="text-align: center;" id="contact">Contact <span>us</span>:</h1>
+<div class="intouch" style="margin-left: 20%;">
+    <br>
+    <h1 class="heading2" style="text-align: center;">Get <span>In</span> Touch</h1>
+    <form action="#">
+<table cellspacing="15">
+    <tr>
+        <td>
+            <input type="text" name="" id="" placeholder="Your Name" class="increase">
+
+            <input type="text" name="" id="" placeholder=" Your Surname" class="increase">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="tel" name="" id="" placeholder="Your Number" class="increase">
+            <input type="email" name="" placeholder="Your Email" onchange="checkmail()" class="increase">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <input type="text" name="Subject" id="" placeholder="Subject" class="increase">
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <h4>Your Message :</h4><br>
+        <textarea name="" id="" cols="20" rows="5"  class="increase"></textarea>
+        <input type="submit" value="Send Message" href="mailto:thabisomabyana1@gmail.com" class="subButton">
+            </td>
+    </tr>
+
+</table>
+</form>
+</div>
+<table style="margin-left:1%;text-align: center;" cellspacing="10" class="heading2">
+    <tr>
+        <td class="intouch2"><br><br>
+            <h3>Em<span>a</span>i<span>l</span></h3><br>
+        <p>thabisomabyana1@gmail.com</p><br><br>
+        <h3>A<span>dd</span>r<span>es</span>s</h3><br>
+        <p>484 suid street ,Flora park</p><br><br>
+        </td>
+        <td class="intouch2"><br><br>
+            <h3><span>P</span>ho<span>n</span>e</h3><br>
+        <p>+27763694939</p><br><br>
+        </td>
+    </tr>
+</table>
+<br><br>
+<div style="text-align: center; background-color: #303030;color: #f2f2f2;">
+  <br><br>
+ <a href="#top" style="color:white;">Search
+<br><br>Pre-order Info
+<br><br>Size Cart
+<br><br>Return policy
+<br><br>Terms f Services
+
+<p><b>Fall on Clo &copy; 2022|Powered By Tvibes<br>(Thabiso Mabyana)</b></p>
+<br><br></a>
+ </div>  
+ 
+ <script type="text/javascript">
+    //  slide show code
+    let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 5 seconds
+  }  
+ </script>
+</body>
+</html>
